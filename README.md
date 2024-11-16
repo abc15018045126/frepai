@@ -1,0 +1,2 @@
+# frepai
+github-vps
