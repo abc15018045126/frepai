@@ -19,7 +19,7 @@ jobs:
           sudo apt-get install -y xrdp
           sudo sed -i 's/allowed_users=console/allowed_users=anybody/' /etc/X11/Xwrapper.config
           echo 'root:abc13726931956' | sudo chpasswd
-      - name: Install ngrok
+      - name: cloudflare
         run: |
           curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb && 
           sudo dpkg -i cloudflared.deb && 
