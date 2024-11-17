@@ -1,4 +1,4 @@
-name: Debian Setup Workflow
+name: Ubuntu Setup Workflow
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: arm64
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
